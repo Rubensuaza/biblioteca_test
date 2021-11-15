@@ -13,7 +13,8 @@ import lombok.Setter;
 
 @Entity
 @Table(name="user")
-
+@Data
+@NoArgsConstructor
 public class UserEntity {
 	
 	@Id
@@ -27,43 +28,6 @@ public class UserEntity {
 	@Column(name="doc_number")
 	private String docNumber;
 	
-	public UserEntity() {
-		super();
-	}
 
-	public Integer getId() {
-		return id;
-	}
-
-	public void setId(Integer id) {
-		this.id = id;
-	}
-
-	public String getFirstName() {
-		return firstName;
-	}
-
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
-	}
-
-	public String getLastName() {
-		return lastName;
-	}
-
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
-	}
-
-	public String getDocNumber() {
-		return docNumber;
-	}
-
-	public void setDocNumber(String docNumber) {
-		this.docNumber = docNumber;
-	}
-	
-	
-	
 
 }
